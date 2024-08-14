@@ -4,7 +4,7 @@
 
 ### Linux(Debian)
 
-apt-sysライブラリが必要です。Debianの場合は以下でインストールできます。
+apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以下でインストールできます。
 
     sudo apt install librust-alsa-sys-dev
 
