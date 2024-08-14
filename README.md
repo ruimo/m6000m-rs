@@ -10,7 +10,7 @@ apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以�
 
 シリアルポートへのアクセスはデフォルトでは一般ユーザに許されていません。以下を実行してからログインし直すか、sudoを付けて実行してください。
 
-    sudo gpasswd $USER dialout
+    sudo gpasswd -a $USER dialout
 
 ## 実行
 
