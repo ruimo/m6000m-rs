@@ -14,7 +14,7 @@ apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以�
 
 ## 実行
 
-開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。
+開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。すみません、まだバイナリのビルドをしていないので、Rustをインストールしてcargoで起動してください。
 
     cargo run
 
