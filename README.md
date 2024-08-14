@@ -39,7 +39,11 @@ apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以�
 
 ### VOICEBOXサポート
 
-[VOICEBOX](https://github.com/VOICEVOX/voicevox_core)による測定値の読み上げに対応しています。VOICEBOXはREST APIでアクセス可能になっている必要があります。簡単なのはDockerを使うことです。
+[VOICEBOX](https://github.com/VOICEVOX/voicevox_core)による測定値の読み上げに対応しています。
+
+[![VOICEBOXサポート](https://img.youtube.com/vi/gl671_m4UQ4/0.jpg)](https://www.youtube.com/watch?v=gl671_m4UQ4)
+
+VOICEBOXはREST APIでアクセス可能になっている必要があります。簡単なのはDockerを使うことです。
 
     docker run -d -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 
