@@ -127,7 +127,7 @@ jobs:
           git config --global user.name "${AUTHOR_NAME}"
       - name: Install libraries on Linux
         run: |
-          sudo apt-get update --yes && sudo apt-get install --yes librust-alsa-sys-dev
+          sudo apt-get update --yes && sudo apt-get install --yes librust-alsa-sys-dev libudev-dev
         if: contains(matrix.platform.name, 'linux')
       - name: Build binary
         uses: houseabsolute/actions-rust-cross@v0
