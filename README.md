@@ -4,17 +4,17 @@
 
 ### Linux(Debian)
 
-apt-sysライブラリが必要です。Debianの場合は以下でインストールできます。
+apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以下でインストールできます。
 
     sudo apt install librust-alsa-sys-dev
 
 シリアルポートへのアクセスはデフォルトでは一般ユーザに許されていません。以下を実行してからログインし直すか、sudoを付けて実行してください。
 
-    sudo gpasswd $USER dialout
+    sudo gpasswd -a $USER dialout
 
 ## 実行
 
-開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。
+開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。すみません、まだバイナリのビルドをしていないので、Rustをインストールしてcargoで起動してください。
 
     cargo run
 
@@ -39,7 +39,11 @@ apt-sysライブラリが必要です。Debianの場合は以下でインスト�
 
 ### VOICEBOXサポート
 
-[VOICEBOX](https://github.com/VOICEVOX/voicevox_core)による測定値の読み上げに対応しています。VOICEBOXはREST APIでアクセス可能になっている必要があります。簡単なのはDockerを使うことです。
+[VOICEBOX](https://github.com/VOICEVOX/voicevox_core)による測定値の読み上げに対応しています。
+
+[![VOICEBOXサポート](https://img.youtube.com/vi/gl671_m4UQ4/0.jpg)](https://www.youtube.com/watch?v=gl671_m4UQ4)
+
+VOICEBOXはREST APIでアクセス可能になっている必要があります。簡単なのはDockerを使うことです。
 
     docker run -d -p '127.0.0.1:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest
 
