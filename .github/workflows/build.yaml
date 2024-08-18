@@ -3,9 +3,8 @@ on: [push, pull_request]
 env:
   AUTHOR_EMAIL: ruimo.uno@gmail.com
   AUTOR_NAME: "Shisei Hanai"
-  CRATE_NAME: m6000m
+  CRATE_NAME: m6000m-rs
   GITHUB_TOKEN: ${{ github.token }}
-  RUSTFLAGS: "-C target-feature=-crt-static"
   RUST_BACKTRACE: 1
 jobs:
   test:
