@@ -4,10 +4,6 @@
 
 ### Linux(Debian)
 
-sslおよびapt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以下でインストールできます。
-
-    sudo apt install librust-alsa-sys-dev libssl-dev
-
 シリアルポートへのアクセスはデフォルトでは一般ユーザに許されていません。以下を実行してからログインし直すか、sudoを付けて実行してください。
 
     sudo gpasswd -a $USER dialout
@@ -79,4 +75,3 @@ VOICEBOXはREST APIでアクセス可能になっている必要があります�
 使用したいデバイス名を指定します。
 
     cargo run -- --voicebox-url http://localhost:50021 --voicebox-speaker 9 --audio-output-device-name pulse
-
