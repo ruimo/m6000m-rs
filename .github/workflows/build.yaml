@@ -5,6 +5,7 @@ env:
   AUTOR_NAME: "Shisei Hanai"
   CRATE_NAME: m6000m
   GITHUB_TOKEN: ${{ github.token }}
+  ENV RUSTFLAGS: "-C target-feature=-crt-static"
   RUST_BACKTRACE: 1
 jobs:
   test:
