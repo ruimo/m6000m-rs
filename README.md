@@ -10,9 +10,7 @@
 
 ## 実行
 
-開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。すみません、まだバイナリのビルドをしていないので、Rustをインストールしてcargoで起動してください。
-
-    cargo run
+開発はLinux上でおこなっていますが、おそらくMac/Windowsでも動作するはずです。[Releases](https://github.com/ruimo/m6000m-rs/releases)からバイナリを入手して実行してください。
 
 シリアルポートの選択になるので、M-6000Mが接続されたシリアルポートを選びます。
 
