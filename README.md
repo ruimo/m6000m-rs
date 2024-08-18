@@ -4,9 +4,9 @@
 
 ### Linux(Debian)
 
-apt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以下でインストールできます。
+sslおよびapt-sysライブラリが必要です。Debian(含むUbuntu)系の場合は以下でインストールできます。
 
-    sudo apt install librust-alsa-sys-dev
+    sudo apt install librust-alsa-sys-dev libssl-dev
 
 シリアルポートへのアクセスはデフォルトでは一般ユーザに許されていません。以下を実行してからログインし直すか、sudoを付けて実行してください。
 
