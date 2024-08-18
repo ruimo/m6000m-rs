@@ -1,6 +1,8 @@
 name: Tests and release
 on: [push, pull_request]
 env:
+  AUTHOR_EMAIL: ruimo.uno@gmail.com
+  AUTOR_NAME: "Shisei Hanai"
   CRATE_NAME: m6000m
   GITHUB_TOKEN: ${{ github.token }}
   RUST_BACKTRACE: 1
@@ -119,10 +121,10 @@ jobs:
           key: "v2"
       - name: Configure Git
         run: |
-          git config --global user.email "jdoe@example.com"
-          git config --global user.name "J. Doe"
+          git config --global user.email "${AUTHOR_EMAIL}"
+          git config --global user.name "${AUTHOR_NAME}"
       - name: Install musl-tools on Linux
-        run: sudo apt-get update --yes && sudo apt-get install --yes musl-tools librust-alsa-sys-dev libssl-dev
+        run: sudo apt-get update --yes && sudo apt-get install --yes musl-tools librust-alsa-sys-dev libssl-dev pkg-config
         if: contains(matrix.platform.name, 'musl')
       - name: Build binary
         uses: houseabsolute/actions-rust-cross@v0
